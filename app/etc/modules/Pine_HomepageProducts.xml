@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Pine_HomepageProducts>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Cms/>
+                <Mage_Catalog/>
+            </depends>
+        </Pine_HomepageProducts>
+    </modules>
+</config>

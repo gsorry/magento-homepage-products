@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Pine_HomepageProducts>
+            <version>0.0.1</version>
+        </Pine_HomepageProducts>
+    </modules>
+    <global>
+        <helpers>
+            <homepageproducts>
+                <class>Pine_HomepageProducts_Helper</class>
+            </homepageproducts>
+        </helpers>
+        <blocks>
+             <homepageproducts>
+                <class>Pine_HomepageProducts_Block</class>
+             </homepageproducts>
+        </blocks>
+    </global>
+    <frontend>
+        <translate>
+            <modules>
+                <Pine_HomepageProducts>
+                     <files>
+                          <default>Pine_HomepageProducts.csv</default>
+                     </files>
+                </Pine_HomepageProducts>
+            </modules>
+        </translate>
+    </frontend>
+</config>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<widgets>
+    <homepageproducts_products type="homepageproducts/products" translate="name description" module="homepageproducts">
+        <name>Homepage Products</name>
+        <description type="desc">Adds Homepage products list to page</description>
+        <parameters>
+            <title translate="label">
+                <label>Title</label>
+                <visible>1</visible>
+                <type>text</type>
+            </title>
+            <max_product_number translate="label">
+                <label>Max Product Number</label>
+                <visible>1</visible>
+                <type>text</type>
+            </max_product_number>
+            <product_type translate="label">
+                <label>Product type</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>select</type>
+                <values>
+                    <new translate="label">
+                        <value>new</value>
+                        <label>New</label>
+                    </new>
+                    <sale translate="label">
+                        <value>sale</value>
+                        <label>Sale</label>
+                    </sale>
+                    <popular translate="label">
+                        <value>popular</value>
+                        <label>Popular</label>
+                    </popular>
+                    <featured translate="label">
+                        <value>featured</value>
+                        <label>Featured</label>
+                    </featured>
+                </values>
+            </product_type>
+            <product_by_attribute translate="label">
+                <label>Search featured by attribute</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+                <depends><product_type><value>featured</value></product_type></depends>
+            </product_by_attribute>
+            <template translate="label">
+                <label>Template</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>hidden</type>
+                <value>homepageproducts/products.phtml</value>
+            </template>
+        </parameters>
+    </homepageproducts_products>
+</widgets>
